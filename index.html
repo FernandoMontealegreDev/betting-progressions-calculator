@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Progresión de Apuestas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Progresión de Apuestas</h1>
+        <form id="bet-form">
+            <label for="bank">Ingresa tu bank (Ejemplo: 1000000 COP):</label>
+            <input type="number" id="bank" name="bank" step="0.01" required>
+
+            <label for="partes">Ingresa en cuántas partes quieres dividir tu bank (Ejemplo: 2000):</label>
+            <input type="number" id="partes" name="partes" step="1" required>
+
+            <label for="factor">Ingresa en cuánto quieres multiplicar cada progresión (Ejemplo: 1.5):</label>
+            <input type="number" id="factor" name="factor" step="0.01" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="result">
+            <!-- Resultados se mostrarán aquí -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
